@@ -4,14 +4,13 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes'>
 
-    <title>lrn-assignment demo</title>
+    <title>lrn-vocab demo</title>
 
     <script src='../../webcomponentsjs/webcomponents-lite.js'></script>
 
     <link rel='import' href='../../iron-demo-helpers/demo-pages-shared-styles.html'>
     <link rel='import' href='../../iron-demo-helpers/demo-snippet.html'>
-    <link rel='import' href='../lrn-assignment.html'>
-    <link rel='import' href='../lrn-assignment-button.html'>
+    <link rel='import' href='../lrn-vocab.html'>
 
     <style is='custom-style' include='demo-pages-shared-styles'>
       .vertical-section-container {
@@ -21,49 +20,34 @@
   </head>
   <body>
     <div class='vertical-section-container centered'>
-      <h3>Basic lrn-assignment demo (default)</h3>
+      <h3>lrn-vocab as card (default)</h3>
       <demo-snippet>
         <template>
-          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']"></lrn-assignment>
+          <lrn-vocab term="Pedagogy" definition="This is the assignment directions" source="Wikipedia contributors. &quot;Pedagogy.&quot; Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 4 Apr. 2017. Web. 4 Apr. 2017." display="card"></lrn-vocab>
         </template>
       </demo-snippet>
-      <h3>Basic lrn-assignment as card</h3>
+    </div>
+    <div class='vertical-section-container centered'>
+      <h3>lrn-vocab as drawer</h3>
       <demo-snippet>
         <template>
-          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']" display="paper-card"></lrn-assignment>
+          <lrn-vocab term="Pedagogy" definition="This is the assignment directions" source="Wikipedia contributors. &quot;Pedagogy.&quot; Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 4 Apr. 2017. Web. 4 Apr. 2017." display="drawer"></lrn-vocab>
         </template>
       </demo-snippet>
-      <h3>Basic lrn-assignment as paper-card</h3>
+    </div>
+    <div class='vertical-section-container centered'>
+      <h3>lrn-vocab as paper-card</h3>
       <demo-snippet>
         <template>
-          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']" display="card"></lrn-assignment>
+          <lrn-vocab term="Pedagogy" definition="This is the assignment directions" source="Wikipedia contributors. &quot;Pedagogy.&quot; Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 4 Apr. 2017. Web. 4 Apr. 2017." display="paper-card"></lrn-vocab>
         </template>
       </demo-snippet>
-      <h3>Basic lrn-assignment as lrndesign-drawer</h3>
+    </div>
+    <div class='vertical-section-container centered'>
+      <h3>lrn-vocab as blockquote</h3>
       <demo-snippet>
         <template>
-          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']" display="drawer"></lrn-assignment>
-        </template>
-      </demo-snippet>
-      <h3>Basic lrn-assignments demo (default)</h3>
-      <demo-snippet>
-        <template>
-          <lrn-assignments assignments='[{"title":"Assignment 1", "actions": ["details"]},{"title":"Assignment 2", "actions": ["detail"]}]'></lrn-assignments>
-        </template>
-      </demo-snippet>
-      <h3>Assignment Buttons</h3>
-      <demo-snippet>
-        <p>Quickly envisioneer empowered web services through go forward partnerships. Objectively strategize B2B communities after high-payoff catalysts for change. Dynamically visualize intuitive resources for ethical quality vectors. Compellingly create maintainable niche markets without optimal e-markets. Monotonectally empower multifunctional data whereas empowered ROI.</p>
-        <p>Efficiently strategize reliable imperatives after empowered alignments. Enthusiastically maximize customer directed information whereas ubiquitous convergence. Dramatically enable leveraged ideas before.</p>
-        <template>
-          <lrn-assignment-button title="Assignment 1" url="http://elmsln.org" complete></lrn-assignment-button>
-        </template>
-      </demo-snippet>
-      <demo-snippet>
-        <p>Quickly envisioneer empowered web services through go forward partnerships. Objectively strategize B2B communities after high-payoff catalysts for change. Dynamically visualize intuitive resources for ethical quality vectors. Compellingly create maintainable niche markets without optimal e-markets. Monotonectally empower multifunctional data whereas empowered ROI.</p>
-        <p>Efficiently strategize reliable imperatives after empowered alignments. Enthusiastically maximize customer directed information whereas ubiquitous convergence. Dramatically enable leveraged ideas before.</p>
-        <template>
-          <lrn-assignment-button title="Assignment 2" url="http://elmsln.org" open></lrn-assignment-button>
+          <lrn-vocab term="Pedagogy" definition="This is the assignment directions" source="Wikipedia contributors. &quot;Pedagogy.&quot; Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 4 Apr. 2017. Web. 4 Apr. 2017." display="blockquote"></lrn-vocab>
         </template>
       </demo-snippet>
     </div>

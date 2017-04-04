@@ -1,8 +1,8 @@
-# \<lrn-assignment\>
+# \<lrn-vocab\>
 
 ## API/DEMO
 
-[LRNWebComponents Assignment](https://lrnwebcomponents.github.io/lrn-assignment/components/lrn-assignment)
+[LRNWebComponents Vocab](https://lrnwebcomponents.github.io/lrn-vocab/components/lrn-vocab)
 
 ## Install the Polymer-CLI
 
