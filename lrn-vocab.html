@@ -44,7 +44,7 @@
     </template>
 
     <template is="dom-if" if="{{matchDisplay('drawer', display)}}">
-      <lrndesign-drawer icon="lrn-icons:about" align="right">
+      <lrndesign-drawer alt="{{term}}" icon="lrn-icons:about" align="right">
         <h2>{{term}}</h2>
         <p>{{definition}}</p>
         <cite>{{source}}</cite>
@@ -53,9 +53,8 @@
 
     <template is="dom-if" if="{{matchDisplay('blockquote', display)}}">
       <lrndesign-blockquote background quote$="{{term}}: {{definition}}" citation="{{source}}">
-      </lrndesign-drawer>
+      </lrndesign-blockquote>
     </template>
-
   </template>
 
   <script>
