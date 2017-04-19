@@ -3,6 +3,7 @@
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../lrndesign-card/lrndesign-card.html">
 <link rel="import" href="../lrndesign-drawer/lrndesign-drawer.html">
+<link rel="import" href="../lrndesign-panelcard/lrndesign-panelcard.html">
 <link rel="import" href="../lrndesign-blockquote/lrndesign-blockquote.html">
 <link rel="import" href="../lrnsys-behaviors/lrnsys-behaviors.html">
 
@@ -35,14 +36,12 @@
         </div>
       </paper-card>
     </template>
-
     <template is="dom-if" if="{{matchDisplay('card', display)}}">
       <lrndesign-card title="{{term}}">
         <p>{{definition}}</p>
         <cite>{{source}}</cite>
       </lrndesign-card>
     </template>
-
     <template is="dom-if" if="{{matchDisplay('drawer', display)}}">
       <lrndesign-drawer alt="{{term}}" icon="lrn-icons:about" align="right">
         <h2>{{term}}</h2>
@@ -50,9 +49,13 @@
         <cite>{{source}}</cite>
       </lrndesign-drawer>
     </template>
-
     <template is="dom-if" if="{{matchDisplay('blockquote', display)}}">
       <lrndesign-blockquote background quote$="{{term}}: {{definition}}" citation="{{source}}">
+      </lrndesign-blockquote>
+    </template>
+    <template is="dom-if" if="{{matchDisplay('panelcard', display)}}">
+      <lrndesign-panelcard title="{{term}}" display-style="{{displayStyle}}">
+      {{definition}}
       </lrndesign-blockquote>
     </template>
   </template>
