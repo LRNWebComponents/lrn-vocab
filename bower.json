@@ -8,7 +8,7 @@
     "lrndesign-card": "LRNWebComponents/lrndesign-card",
     "lrndesign-drawer": "LRNWebComponents/lrndesign-drawer",
     "lrnsys-behaviors": "LRNWebComponents/lrnsys-behaviors#^1.0.0",
-    "lrndesign-blockquote": "LRNWebcomponents/lrndesign-blockquote#^0.0.4",
+    "lrndesign-blockquote": "LRNWebcomponents/lrndesign-blockquote#^0.0.8",
     "lrndesign-panelcard": "LRNWebComponents/lrndesign-panelcard#^0.0.3"
   },
   "devDependencies": {
@@ -16,11 +16,5 @@
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
     "web-component-tester": "^4.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-  },
-  "resolutions": {
-    "hax-editbar": "0.0.5",
-    "lrnsys-behaviors": "^1.0.0",
-    "lrndesign-blockquote": "^0.0.3",
-    "hax-behaviors": "^0.0.5"
   }
 }
